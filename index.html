@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veículos econômicos e acessíveis em João Pessoa. Confira nossos preços competitivos e financiamento fácil.">
+    <title>CarroFacil João Pessoa - Seu Primeiro Carro Está Aqui!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #00A859;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #FFD700;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero button {
+            background-color: #00A859;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #00743f;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .diferenciais {
+            background-color: #f1f1f1;
+            padding: 50px 20px;
+        }
+
+        .diferenciais ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .diferenciais li {
+            margin: 10px 0;
+        }
+
+        .depoimentos {
+            background-color: #FFF3E0;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .depoimentos blockquote {
+            max-width: 600px;
+            margin: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .faq {
+            padding: 50px 20px;
+            background-color: #ffffff;
+        }
+
+        .faq dt {
+            font-weight: 600;
+            margin: 15px 0;
+        }
+
+        form {
+            background-color: #FFD700;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form select {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #00A859;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #00743f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #00A859;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logotipo CarroFacil João Pessoa">
+        <nav>
+            <a href="#proposta-valor">Proposta de Valor</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Seu Primeiro Carro Está Aqui!</h1>
+        <p>Veículos econômicos e acessíveis em João Pessoa</p>
+        <button onclick="document.querySelector('#contato').scrollIntoView({behavior: 'smooth'})">Quero meu carro!</button>
+    </section>
+
+    <section id="proposta-valor" class="cards">
+        <div class="card">
+            <h2>Preços Competitivos</h2>
+            <p>Adquira seu carro por valores que cabem no seu bolso.</p>
+        </div>
+        <div class="card">
+            <h2>Financiamento Fácil</h2>
+            <p>Oferecemos condições de pagamento que facilitam sua compra.</p>
+        </div>
+        <div class="card">
+            <h2>Veículos Inspecionados</h2>
+            <p>Carros revisados e prontos para você e sua família.</p>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="diferenciais">
+        <h2>Diferenciais</h2>
+        <ul>
+            <li>Preços extremamente competitivos no mercado.</li>
+            <li>Financiamento facilitado para todos os perfis de clientes.</li>
+            <li>Veículos rigorosamente inspecionados para sua segurança.</li>
+            <li>Atendimento personalizado com foco em suas necessidades.</li>
+        </ul>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <h2>Depoimentos</h2>
+        <blockquote>"Comprei meu primeiro carro aqui e foi uma experiência incrível. Atendimento excelente!" - Ana Pessoa</blockquote>
+        <blockquote>"Consegui financiar meu carro com facilidade e estou muito satisfeita com a compra." - Carlos Silva</blockquote>
+        <blockquote>"Veículos inspecionados e excelente relação custo-benefício. Recomendo a todos!" - Letícia Gomes</blockquote>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>FAQ</h2>
+        <dl>
+            <dt>Como é feito o financiamento?</dt>
+            <dd>Trabalhamos com diversas instituições financeiras para oferecer as melhores condições de financiamento.</dd>
+
+            <dt>Os veículos possuem garantia?</dt>
+            <dd>Sim! Todos os nossos veículos passam por uma rigorosa inspeção e possuem garantia.</dd>
+
+            <dt>Posso dar meu carro usado na troca?</dt>
+            <dd>Sim! Avaliamos o seu usado na troca por um de nossos veículos.</dd>
+        </dl>
+    </section>
+
+    <section id="contato" class="formulario">
+        <form>
+            <h2>Entre em Contato</h2>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="tel" name="telefone" placeholder="Seu telefone" required>
+            <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required>
+            <select name="tipo-carro" required>
+                <option value="" disabled selected>Selecione o tipo de carro desejado</option>
+                <option value="hatch">Hatch</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="pickup">Pickup</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CarroFacil João Pessoa. Endereço: João Pessoa-PB</p>
+    </footer>
+</body>
+</html>

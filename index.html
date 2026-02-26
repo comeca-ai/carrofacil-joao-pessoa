@@ -2,249 +2,264 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veículos econômicos e acessíveis em João Pessoa. Confira nossos preços competitivos e financiamento fácil.">
-    <title>CarroFacil João Pessoa - Seu Primeiro Carro Está Aqui!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CarroFacil João Pessoa - Carros Seminovos</title>
+    <style type="text/css">
         body {
-            font-family: 'Poppins', sans-serif;
             margin: 0;
-            color: #333;
+            font-family: 'Open Sans', sans-serif;
+            color: #111111;
         }
-
-        header {
-            background-color: #00A859;
-            padding: 20px;
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #111111;
+        }
+        .header {
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
         }
-
-        header img {
+        .header img {
             height: 50px;
         }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .hero {
-            text-align: center;
-            background-color: #FFD700;
-            padding: 50px 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .hero button {
+        .header .cta {
             background-color: #00A859;
-            color: #fff;
-            border: none;
+            color: white;
             padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .hero button:hover {
-            background-color: #00743f;
-        }
-
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .card {
-            background-color: #f9f9f9;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 15px;
-            padding: 20px;
-            max-width: 300px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .diferenciais {
-            background-color: #f1f1f1;
-            padding: 50px 20px;
-        }
-
-        .diferenciais ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .diferenciais li {
-            margin: 10px 0;
-        }
-
-        .depoimentos {
-            background-color: #FFF3E0;
-            padding: 50px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .depoimentos blockquote {
-            max-width: 600px;
-            margin: 10px;
-            font-style: italic;
-            color: #555;
-        }
-
-        .faq {
-            padding: 50px 20px;
-            background-color: #ffffff;
-        }
-
-        .faq dt {
-            font-weight: 600;
-            margin: 15px 0;
-        }
-
-        form {
-            background-color: #FFD700;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        form input, form select {
-            margin: 10px 0;
-            padding: 10px;
-            width: 100%;
-            max-width: 500px;
-            border: 1px solid #ccc;
+            text-decoration: none;
             border-radius: 5px;
         }
-
-        form button {
-            padding: 10px 20px;
+        .hero {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 100px 20px;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .hero .subheadline {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .hero .cta-button {
             background-color: #00A859;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
+            color: white;
+            padding: 15px 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
         }
-
-        form button:hover {
-            background-color: #00743f;
+        .badges {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #fff;
         }
-
-        footer {
+        .badge {
+            text-align: center;
+        }
+        .badge h3 {
+            margin: 10px 0;
+            color: #00A859;
+        }
+        .benefits {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .benefits h2 {
+            margin-bottom: 20px;
+        }
+        .benefit-card {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .vehicles {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .vehicle-card {
+            display: inline-block;
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .vehicle-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .testimonials {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .testimonial {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            margin: 10px;
+            border: 1px solid #f4f4f4;
+            border-radius: 8px;
+        }
+        .urgency {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .interest-form {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .interest-form input, .interest-form select {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #111111;
+            color: white;
             text-align: center;
             padding: 20px;
-            background-color: #00A859;
-            color: #fff;
+            margin-top: 20px;
         }
-
-        @media (max-width: 600px) {
-            .cards {
-                flex-direction: column;
-                align-items: center;
-            }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00A859;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 25px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logotipo CarroFacil João Pessoa">
-        <nav>
-            <a href="#proposta-valor">Proposta de Valor</a>
-            <a href="#diferenciais">Diferenciais</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Seu Primeiro Carro Está Aqui!</h1>
-        <p>Veículos econômicos e acessíveis em João Pessoa</p>
-        <button onclick="document.querySelector('#contato').scrollIntoView({behavior: 'smooth'})">Quero meu carro!</button>
-    </section>
+    <div class="header">
+        <img src="logo.png" alt="CarroFacil Logo">
+        <a href="#interesse" class="cta">Fale Conosco: (83) XXXX-XXXX</a>
+    </div>
 
-    <section id="proposta-valor" class="cards">
-        <div class="card">
-            <h2>Preços Competitivos</h2>
-            <p>Adquira seu carro por valores que cabem no seu bolso.</p>
+    <div class="hero">
+        <h1>Seu Carro Sem Burocracia</h1>
+        <p class="subheadline">Financiamento fácil e rápido com a CarroFacil</p>
+        <a href="#interesse" class="cta-button">Quero o Meu!</a>
+    </div>
+
+    <div class="badges">
+        <div class="badge">
+            <h3>+ de 500 clientes atendidos</h3>
         </div>
-        <div class="card">
-            <h2>Financiamento Fácil</h2>
-            <p>Oferecemos condições de pagamento que facilitam sua compra.</p>
+        <div class="badge">
+            <h3>Financiamento em 24h</h3>
         </div>
-        <div class="card">
-            <h2>Veículos Inspecionados</h2>
-            <p>Carros revisados e prontos para você e sua família.</p>
+        <div class="badge">
+            <h3>Garantia de procedência</h3>
         </div>
-    </section>
+    </div>
 
-    <section id="diferenciais" class="diferenciais">
-        <h2>Diferenciais</h2>
-        <ul>
-            <li>Preços extremamente competitivos no mercado.</li>
-            <li>Financiamento facilitado para todos os perfis de clientes.</li>
-            <li>Veículos rigorosamente inspecionados para sua segurança.</li>
-            <li>Atendimento personalizado com foco em suas necessidades.</li>
-        </ul>
-    </section>
+    <div class="benefits">
+        <h2>Por que escolher a CarroFacil?</h2>
+        <div class="benefit-card">
+            <h3>Financiamento sem complicação</h3>
+        </div>
+        <div class="benefit-card">
+            <h3>Segurança garantida</h3>
+        </div>
+        <div class="benefit-card">
+            <h3>Procedência confiável</h3>
+        </div>
+    </div>
 
-    <section id="depoimentos" class="depoimentos">
-        <h2>Depoimentos</h2>
-        <blockquote>"Comprei meu primeiro carro aqui e foi uma experiência incrível. Atendimento excelente!" - Ana Pessoa</blockquote>
-        <blockquote>"Consegui financiar meu carro com facilidade e estou muito satisfeita com a compra." - Carlos Silva</blockquote>
-        <blockquote>"Veículos inspecionados e excelente relação custo-benefício. Recomendo a todos!" - Letícia Gomes</blockquote>
-    </section>
+    <div class="vehicles">
+        <h2>Nossos veículos em destaque</h2>
+        <div class="vehicle-card">
+            <img src="placeholder.jpg" alt="Veículo 1">
+            <h3>Modelo A</h3>
+            <p>R$ 25.000</p>
+            <p>15.000 km</p>
+        </div>
+        <div class="vehicle-card">
+            <img src="placeholder.jpg" alt="Veículo 2">
+            <h3>Modelo B</h3>
+            <p>R$ 30.000</p>
+            <p>10.000 km</p>
+        </div>
+        <div class="vehicle-card">
+            <img src="placeholder.jpg" alt="Veículo 3">
+            <h3>Modelo C</h3>
+            <p>R$ 28.000</p>
+            <p>20.000 km</p>
+        </div>
+    </div>
 
-    <section id="faq" class="faq">
-        <h2>FAQ</h2>
-        <dl>
-            <dt>Como é feito o financiamento?</dt>
-            <dd>Trabalhamos com diversas instituições financeiras para oferecer as melhores condições de financiamento.</dd>
+    <div class="testimonials">
+        <h2>O que dizem nossos clientes</h2>
+        <div class="testimonial">
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <p>"Experiência incrível!"</p>
+            <p>- João, João Pessoa</p>
+        </div>
+        <div class="testimonial">
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <p>"Super recomendo!"</p>
+            <p>- Maria, João Pessoa</p>
+        </div>
+        <div class="testimonial">
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <p>"Melhor revenda!"</p>
+            <p>- Pedro, João Pessoa</p>
+        </div>
+    </div>
 
-            <dt>Os veículos possuem garantia?</dt>
-            <dd>Sim! Todos os nossos veículos passam por uma rigorosa inspeção e possuem garantia.</dd>
+    <div class="urgency">
+        <h2>Estoque limitado - apenas X unidades disponíveis</h2>
+        <a href="#interesse" class="cta-button">Garantir meu carro!</a>
+    </div>
 
-            <dt>Posso dar meu carro usado na troca?</dt>
-            <dd>Sim! Avaliamos o seu usado na troca por um de nossos veículos.</dd>
-        </dl>
-    </section>
-
-    <section id="contato" class="formulario">
+    <div class="interest-form" id="interesse">
+        <h2>Entre em contato conosco</h2>
         <form>
-            <h2>Entre em Contato</h2>
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="tel" name="telefone" placeholder="Seu telefone" required>
-            <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required>
-            <select name="tipo-carro" required>
-                <option value="" disabled selected>Selecione o tipo de carro desejado</option>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="WhatsApp">
+            <select>
+                <option value="" disabled selected>Tipo de carro</option>
                 <option value="hatch">Hatch</option>
                 <option value="sedan">Sedan</option>
                 <option value="suv">SUV</option>
-                <option value="pickup">Pickup</option>
             </select>
-            <button type="submit">Enviar</button>
+            <input type="text" placeholder="Valor de entrada">
+            <button class="cta-button" type="submit">Enviar</button>
         </form>
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 CarroFacil João Pessoa. Endereço: João Pessoa-PB</p>
-    </footer>
+    <div class="footer">
+        <p>CarroFacil João Pessoa - Rua Exemplo, 123 - João Pessoa, PB</p>
+    </div>
+
+    <a href="https://wa.me/5583XXXXXXX" class="whatsapp-button" target="_blank">✓</a>
 </body>
 </html>
